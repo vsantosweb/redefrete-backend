@@ -59,7 +59,8 @@ const variantFlushed = () => ({
   field: {
     _focus: {
       borderColor: theme.colors.primary,
-    }
+    },
+    borderBottom: 'solid 2px'
   }
 });
 

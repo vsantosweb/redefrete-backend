@@ -16,6 +16,9 @@ export const PageHeaderContent = styled.div`
 export const PageHeaderInfo = styled.div`
 padding: 12px;
 h3{ font-size: 18px; font-weight: bold}
+display: flex;
+gap: 10px;
+align-items: center;
 `
 export const HeaderMenu = styled.nav``;
 export const HeaderMenuList = styled.nav`

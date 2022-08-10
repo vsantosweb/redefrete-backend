@@ -12,6 +12,7 @@ import { RouteGuard, RouteGuardContext } from '../RouteGuard';
 import '@inovua/reactdatagrid-enterprise/index.css'
 import '@inovua/reactdatagrid-enterprise/theme/pink-light.css'
 
+
 type PageConfigProps = {
   title?: string,
   description?: string
