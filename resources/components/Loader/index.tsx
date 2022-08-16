@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as Styled from './styles';
-import { usePromiseTracker } from 'react-promise-tracker';
+// import { usePromiseTracker } from 'react-promise-tracker';
 import { Spinner } from '@chakra-ui/react';
 
 type Props = { fill?: boolean, text?: string, isPromisse?: boolean, area?: string, children?: any, promisse: any }

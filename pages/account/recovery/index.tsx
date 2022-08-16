@@ -1,5 +1,4 @@
-import { Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text } from '@chakra-ui/react';
-import { NextPage } from 'next';
+import { FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { AccountButton } from '../styles';
 import { useForm } from 'react-hook-form';
@@ -51,6 +50,10 @@ export const Recovery = ({ layout, history }: any) => {
     )
 }
 
-Recovery.layout = 'AuthLayout';
+Recovery.config = {
+    title: 'Recuperar Senha',
+    layout:'AuthLayout'
+  }
+  
 
 export default Recovery;

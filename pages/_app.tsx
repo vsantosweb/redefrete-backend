@@ -1,16 +1,14 @@
-import React, { ReactElement, ReactNode } from 'react';
+import React from 'react';
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Theme from '../theme'
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { withRouter } from 'next/router'
 import type { NextPage } from 'next';
 import { layout, Layout, LayoutProps } from '../resources/layouts';
 import "../resources/fonts/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css";
-import { RouteGuard, RouteGuardContext } from '../RouteGuard';
-import '@inovua/reactdatagrid-enterprise/index.css'
-import '@inovua/reactdatagrid-enterprise/theme/pink-light.css'
+import { RouteGuard } from '../RouteGuard';
+import '@inovua/reactdatagrid-enterprise/index.css';
+import '@inovua/reactdatagrid-enterprise/theme/pink-light.css';
 
 
 type PageConfigProps = {

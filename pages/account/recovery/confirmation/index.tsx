@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import React from 'react'
 import { Button, Heading, Stack, Text } from '@chakra-ui/react'
 
-export const RecoveryConfirmation = ({ layout , history}: any) => {
+export const RecoveryConfirmation = ({ layout, history }: any) => {
 
     return (
         <Stack spacing={3}>
@@ -17,5 +17,12 @@ export const RecoveryConfirmation = ({ layout , history}: any) => {
 }
 
 RecoveryConfirmation.layout = 'AuthLayout';
+
+
+RecoveryConfirmation.config = {
+    title: 'Recuperar Senha',
+    layout: 'AuthLayout'
+}
+
 
 export default RecoveryConfirmation;

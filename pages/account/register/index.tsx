@@ -1,12 +1,10 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { Alert, AlertDescription, AlertIcon, AlertTitle, CloseButton, FormControl, FormErrorMessage, FormLabel, Input, Stack } from '@chakra-ui/react';
+import { Alert, AlertDescription, AlertIcon, AlertTitle, FormControl, FormErrorMessage, FormLabel, Input, Stack } from '@chakra-ui/react';
 import * as Styled from '../styles';
 import api from '../../api';
-import { useRouter } from 'next/router';
-import withLayout from '../../../layout';
 
-function Register({ layout, history }) {
+function Register({ history }) {
 
     const { handleSubmit, register, watch, formState: { isValid, errors, isSubmitting, isSubmitSuccessful } } = useForm({ mode: 'onChange' });
     const [errorMessage, setErrorMessage] = React.useState();
@@ -87,5 +85,11 @@ function Register({ layout, history }) {
 }
 
 Register.layout = 'AuthLayout';
+
+Register.config = {
+    title: 'Cadastre-se',
+    layout: 'AuthLayout'
+}
+
 
 export default Register;

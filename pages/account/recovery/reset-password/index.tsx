@@ -1,10 +1,8 @@
-import { Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text } from '@chakra-ui/react'
-import { NextPage } from 'next'
+import {  FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import api from '../../../api'
-import { NextPageWithLayout } from '../../../_app'
 import { AccountButton } from '../../styles'
 
 export async function getServerSideProps(req, res) {
@@ -69,6 +67,10 @@ export const Recovery = ({ layout, history, ...props }: any) => {
     )
 }
 
-Recovery.layout = 'AuthLayout'
+
+Recovery.config = {
+    title: 'Recuperar Senha',
+    layout:'AuthLayout'
+  }
 
 export default Recovery;
